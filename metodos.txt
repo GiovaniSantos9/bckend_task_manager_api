@@ -1,0 +1,44 @@
+  
+1. Registrar um Usuário:
+- Método: `POST`
+- URL: `http://localhost:3000/api/users/register`
+- Body: json
+{
+  "username": "testuser",
+  "password": "password123"
+}
+
+2. Login do Usuário:
+- Método: `POST`
+- URL: `http://localhost:3000/api/users/login`
+- Body: json
+{
+  "username": "testuser",
+  "password": "password123"
+}
+
+3. Criar uma Tarefa:
+- Método: `POST`
+- URL: `http://localhost:3000/api/tasks/create`
+- Body: json
+{
+  "title": "Minha primeira tarefa",
+  "description": "Descrição da tarefa."
+}
+
+4. Listar Tarefas:
+- Método: `GET`
+- URL: `http://localhost:3000/api/tasks`
+
+5. Editar uma Tarefa:
+- Método: `PUT`
+- URL: `http://localhost:3000/api/tasks/:id/edit`
+- Body: json
+{
+  "title": "Título atualizado",
+  "description": "Descrição atualizada."
+}
+
+6. Deletar uma Tarefa:
+- Método: `DELETE`
+- URL: `http://localhost:3000/api/tasks/:id/delete`
